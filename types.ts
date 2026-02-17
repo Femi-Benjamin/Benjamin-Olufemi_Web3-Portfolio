@@ -6,10 +6,19 @@ export interface Project {
   description: string;
   longDescription?: string;
   tags: string[];
-  link: string;
-  demoLink?: string;
   image: string;
   screenshots?: string[];
+  
+  // New fields for enhanced portfolio
+  repoUrl?: string;
+  liveUrl?: string; // Replaces demoLink
+  caseStudyUrl?: string;
+  
+  highlights?: string[]; // measurable impact
+  role?: string;
+  stack?: string[]; // detailed tech stack
+  challenges?: string[];
+  category: 'frontend' | 'web3' | 'tools' | 'all';
 }
 
 export interface Skill {
