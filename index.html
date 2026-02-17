@@ -1,41 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Benjamin Olufemi | Frontend & Web3 Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['Space Grotesk', 'sans-serif'],
+              sans: ["Inter", "sans-serif"],
+              display: ["Space Grotesk", "sans-serif"],
             },
             colors: {
-              'void': '#050505',
-              'glass': 'rgba(255, 255, 255, 0.05)',
-              'neon-blue': '#00f3ff',
-              'neon-purple': '#bc13fe',
+              void: "#050505",
+              glass: "rgba(255, 255, 255, 0.05)",
+              "neon-blue": "#00f3ff",
+              "neon-purple": "#bc13fe",
             },
             animation: {
-              'float-slow': 'float 10s ease-in-out infinite',
-              'float-medium': 'float 7s ease-in-out infinite',
-              'float-fast': 'float 5s ease-in-out infinite',
+              "float-slow": "float 10s ease-in-out infinite",
+              "float-medium": "float 7s ease-in-out infinite",
+              "float-fast": "float 5s ease-in-out infinite",
             },
             keyframes: {
               float: {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-20px)' },
-              }
-            }
-          }
-        }
-      }
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+            },
+          },
+        },
+      };
     </script>
     <style>
       body {
@@ -51,27 +54,17 @@
       }
       /* Hide scrollbar for Chrome, Safari and Opera */
       .no-scrollbar::-webkit-scrollbar {
-          display: none;
+        display: none;
       }
       /* Hide scrollbar for IE, Edge and Firefox */
       .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4"
-  }
-}
-</script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
