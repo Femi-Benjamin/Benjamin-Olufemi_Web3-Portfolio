@@ -8,6 +8,7 @@ import {
   Send,
   Loader2,
   CheckCircle2,
+  Phone,
 } from "lucide-react";
 
 // Custom WhatsApp Icon Component
@@ -82,22 +83,22 @@ const Contact: React.FC = () => {
             >
               <SocialButton
                 icon={<Github size={20} />}
-                href="https://github.com/benjamin-olufemi"
+                href="https://github.com/Femi-Benjamin"
                 label="GitHub"
               />
               <SocialButton
                 icon={<Linkedin size={20} />}
-                href="https://linkedin.com/in/benjamin-olufemi"
+                href="https://www.linkedin.com/in/benjamin-olufemi-7524ab226/"
                 label="LinkedIn"
               />
               <SocialButton
                 icon={<Twitter size={20} />}
-                href="https://twitter.com/benjamin_web3"
+                href="https://twitter.com/Mr1Best"
                 label="Twitter"
               />
               <SocialButton
                 icon={<WhatsAppIcon size={20} />}
-                href="#"
+                href="https://web.whatsapp.com/"
                 label="WhatsApp"
               />
             </motion.div>
@@ -108,11 +109,30 @@ const Contact: React.FC = () => {
                   <Mail size={20} />
                 </div>
                 <a
-                  href="mailto:hello@benjamin.dev"
+                  href="mailto:benjaminolufemi16@gmail.com"
                   className="text-lg hover:text-white transition-colors"
                 >
-                  hello@benjamin.dev
+                  benjaminolufemi16@gmail.com
                 </a>
+              </div>
+              <div className="flex items-center gap-4 text-gray-300">
+                <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-neon-blue">
+                  <Phone size={20} />
+                </div>
+                <div className="flex flexcol">
+                  <a
+                    href="tel:08160989601"
+                    className="text-lg hover:text-white transition-colors"
+                  >
+                    08160989601
+                  </a>
+                  {/* <a
+                    href="tel:08113639891"
+                    className="text-lg hover:text-white transition-colors"
+                  >
+                    08113639891
+                  </a> */}
+                </div>
               </div>
             </div>
           </div>
@@ -263,6 +283,8 @@ const SocialButton: React.FC<{
 }> = ({ icon, href, label }) => (
   <a
     href={href}
+    target="_blank"
+    rel="noopener noreferrer"
     aria-label={label}
     className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-black hover:border-white transition-all duration-300 group"
   >

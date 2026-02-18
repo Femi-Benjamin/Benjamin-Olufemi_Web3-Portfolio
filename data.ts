@@ -1,6 +1,19 @@
 import { Project } from './types';
+import vault from './components/images/vault.png';
+import web3 from './components/images/web3.png';
+import spendwise from './components/images/spendwise.png';
+import titan from './components/images/titan.png';
+import unique from './components/images/unique.png';
+import shoe from './components/images/shoe.png';
+import arctic from './components/images/arctic.png';
+import elearn from './components/images/elearn.png';
+import cardify from './components/images/cardify.png';
+import animefinance from './components/images/animefinance.png';
+import personarise from './components/images/personarise.png';
+import ben from './components/images/ben.jpg';
 
 export const projects: Project[] = [
+  // Original Projects
   {
     id: 1,
     title: "DeFi Exchange Pro",
@@ -73,6 +86,17 @@ export const projects: Project[] = [
     ]
   },
   {
+    id: 25,
+    title: "My Portfolio Frontend",
+    description: "A personal portfolio website showcasing projects and skills with modern UI.",
+    tags: ["React Js", "Material UI", "Framer Motion"],
+    repoUrl: "https://github.com/Femi-Benjamin/Portfolio_Benjamin-Olufemi",
+    liveUrl: "https://benjamin-olufemi-portfolio.vercel.app/",
+    image: ben,
+    category: 'frontend',
+    highlights: ["Modern and responsive UI design", "Smooth animations with Framer Motion", "Showcase of Web3 and Frontend projects"],
+  },
+  {
     id: 5,
     title: "Metaverse Real Estate",
     description: "3D virtual land explorer integrated with Decentraland registry data.",
@@ -97,13 +121,13 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/benjamin-olufemi",
     image: "https://picsum.photos/800/600?random=6",
     category: 'web3',
-     highlights: [
+    highlights: [
       "Designed a fail-safe UI that prevents user errors during critical transactions",
       "Reduced perceived waiting time with detailed step-by-step progress tracking",
       "Handled edge cases for chain reorgs and dropped transactions elegantly"
     ]
   },
-    {
+  {
     id: 7,
     title: "Yield Farming Aggregator",
     description: "Dashboard tracking highest APY farms across multiple protocols with one-click staking capabilities.",
@@ -162,5 +186,137 @@ export const projects: Project[] = [
     image: "https://picsum.photos/800/600?random=12",
     category: "tools",
     highlights: ["Real-time gas tracking"]
-  }
+  },
+  // New Projects
+  {
+    id: 13,
+    title: "FAITH VAULT",
+    description: "A secure digital vault application for managing digital assets and sensitive information.",
+    tags: ["React Js", "Typescript", "Framer Motion", "TailwindCSS"],
+    repoUrl: "https://github.com/Femi-Benjamin/faith-media-hub",
+    liveUrl: "https://faith-vault.vercel.app/",
+    image: vault,
+    category: 'frontend',
+    highlights: ["Secure digital asset management", "User-friendly interface", "Robust security features"],
+  },
+  {
+    id: 14,
+    title: "MY WEB3 HUB",
+    description: "A comprehensive Web3 dashboard for tracking crypto assets and exploring decentralized applications.",
+    tags: ["React Js", "Typescript", "TailwindCSS"],
+    repoUrl: "https://github.com/Femi-Benjamin/my-web3-hub",
+    liveUrl: "https://my-web3-hub.vercel.app/",
+    image: web3,
+    category: 'web3',
+    highlights: ["Real-time crypto asset tracking", "Decentralized application explorer", "Dapp Integration"],
+  },
+  {
+    id: 15,
+    title: "SPENDWISE",
+    description: "Your personal finance companion for tracking expenses, budgeting, and financial planning.",
+    tags: ["React Js", "Typescript", "TailwindCSS"],
+    repoUrl: "https://github.com/Femi-Benjamin/spendwise-your-personal-finance-companion",
+    liveUrl: "https://spendwise-your-personal-finance-com.vercel.app/",
+    image: spendwise,
+    category: 'frontend',
+    highlights: ["Expense tracking and budgeting", "Visual financial reports", "Goal setting features"],
+  },
+  {
+    id: 16,
+    title: "TITAN LEAP",
+    description: "A dynamic landing page and platform for Titan Leap, showcasing services and offerings.",
+    tags: ["React Js", "Typescript", "TailwindCSS"],
+    repoUrl: "https://github.com/Femi-Benjamin/Titan-leap",
+    liveUrl: "https://titan-leap-ruddy.vercel.app/",
+    image: titan,
+    category: 'frontend',
+    highlights: ["Modern landing page design", "Service showcase", "Responsive layout"],
+  },
+  {
+    id: 17,
+    title: "UNIQUE HAIR TREATMENT",
+    description: "A beauty and wellness platform specifically designed for hair treatment services.",
+    tags: ["React Js", "TailwindCSS"],
+    repoUrl: "https://github.com/Femi-Benjamin/Unique-Hair-Treatment",
+    liveUrl: "https://unique-hair-treatment.vercel.app/",
+    image: unique,
+    category: 'frontend',
+    highlights: ["Service booking system", "Gallery of treatments", "Customer testimonials"],
+  },
+  {
+    id: 18,
+    title: "CHARM COMMERCE",
+    description: "A modern e-commerce user interface for an online fashion and accessories store.",
+    tags: ["React Js", "TailwindCSS"],
+    repoUrl: "https://github.com/Femi-Benjamin/charm-commerce-ui",
+    liveUrl: "https://charm-commerce-ui.vercel.app/",
+    image: shoe,
+    category: 'frontend',
+    highlights: ["Product catalog with filters", "Shopping cart functionality", "Checkout process flow"],
+  },
+  {
+    id: 19,
+    title: "ARCTIC TRAVEL AGENCY",
+    description: "A travel agency website offering tour packages and destination guides for arctic adventures.",
+    tags: ["React Js", "TailwindCSS"],
+    repoUrl: "https://github.com/Femi-Benjamin/arctic_travels",
+    liveUrl: "https://arctic-travels-two.vercel.app/",
+    image: arctic,
+    category: 'frontend',
+    highlights: ["Tour package browsing", "Destination guides", "Booking inquiry form"],
+  },
+  {
+    id: 20,
+    title: "HEALTH CARE MANAGEMENT SYSTEM",
+    description: "A comprehensive system for managing patient records, appointments, and hospital resources.",
+    tags: ["React Js", "TailwindCSS", "Material UI", "MySQL"],
+    repoUrl: "https://github.com/Femi-Benjamin/HealthCare_App",
+    liveUrl: "https://healthcare-app.vercel.app/",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070",
+    category: 'frontend',
+    highlights: ["Patient record management", "Appointment scheduling", "Resource allocation tracking"],
+  },
+  {
+    id: 21,
+    title: "E-LEARNING PLATFORM",
+    description: "An educational platform facilitating online learning with courses and interactive content.",
+    tags: ["React Js", "Chakra UI", "TailwindCSS"],
+    repoUrl: "https://github.com/Femi-Benjamin/e-learn_project1",
+    liveUrl: "https://e-learn-project1.vercel.app/",
+    image: elearn,
+    category: 'frontend',
+    highlights: ["Course catalog and enrollment", "Interactive learning modules", "Progress tracking"],
+  },
+  {
+    id: 22,
+    title: "Cardify",
+    description: "A digital card generation and management application with cloud integration.",
+    tags: ["React Js", "TailwindCSS", "Chara UI", "Firebase"],
+    repoUrl: "https://github.com/Femi-Benjamin/Cardify",
+    liveUrl: "https://cardify-bice.vercel.app/",
+    image: cardify,
+    category: 'tools',
+    highlights: ["Digital card creation", "Cloud storage integration", "Easy sharing options"],
+  },
+  {
+    id: 23,
+    title: "Anime Finance 1.0",
+    description: "A decentralized finance platform with an anime-themed user interface.",
+    tags: ["React Js", "Material UI"],
+    repoUrl: "https://github.com/Femi-Benjamin/anime-finance",
+    liveUrl: "https://anime-finance-five.vercel.app/",
+    image: animefinance,
+    category: 'web3',
+    highlights: ["Anime-themed UI", "DeFi protocol integration", "Yield farming features"],
+  },
+  {
+    id: 24,
+    title: "PERSONARISE WEB APP",
+    description: "A web application for personalized user experiences and content management.",
+    tags: ["React Js", "Tailwind CSS", "Material UI"],
+    repoUrl: "https://github.com/Femi-Benjamin/Personarise-Project",
+    image: personarise,
+    category: 'frontend',
+    highlights: ["Personalized content delivery", "User preference management", "Dynamic themes"],
+  },
 ];
