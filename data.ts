@@ -22,7 +22,7 @@ export const projects: Project[] = [
     tags: ["React", "Web3.js", "Tailwind", "Dex API"],
     repoUrl: "https://github.com/benjamin-olufemi",
     liveUrl: "https://example.com/demo",
-    image: "https://picsum.photos/800/600?random=1",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=800&auto=format&fit=crop",
     screenshots: ["https://picsum.photos/800/600?random=101", "https://picsum.photos/800/600?random=102"],
     category: 'web3',
     role: "Lead Frontend Engineer",
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Solidity", "IPFS", "Pinata"],
     repoUrl: "https://github.com/benjamin-olufemi",
     liveUrl: "https://example.com/demo",
-    image: "https://picsum.photos/800/600?random=2",
+    image: "https://images.unsplash.com/photo-1643101809744-246a47803b25?q=80&w=800&auto=format&fit=crop",
     category: 'web3',
     role: "Full Stack Web3 Developer",
     stack: ["Next.js", "Wagmi", "Solidity", "IPFS", "Framer Motion"],
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     longDescription: "A governance hub for DAOs to manage proposals, treasury, and voting. It introduces quadratic voting to prevent whale dominance and integrates with Snapshot for gasless off-chain voting. The dashboard provides deep analytics into voter participation and proposal outcomes.",
     tags: ["TypeScript", "Ethers.js", "GraphQL"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://picsum.photos/800/600?random=3",
+    image: "https://images.unsplash.com/photo-1551288049-bbbda5366392?q=80&w=800&auto=format&fit=crop",
     category: 'web3',
     highlights: [
       "Integrated Snapshot API for gasless voting, increasing participation by 300%",
@@ -77,7 +77,8 @@ export const projects: Project[] = [
     longDescription: "Leveraging LLMs to secure smart contracts. This tool accepts Solidity code, parses it, and runs it against a fine-tuned model to detect common vulnerabilities like Reentrancy and Overflow. It generates detailed PDF reports with remediation steps and gas optimization tips.",
     tags: ["React", "OpenAI API", "Solidity", "Node.js"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://picsum.photos/800/600?random=4",
+
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
     category: 'tools',
     highlights: [
       "Fine-tuned an OpenAI model on 500+ audited smart contracts",
@@ -103,7 +104,7 @@ export const projects: Project[] = [
     longDescription: "An immersive 3D map interface for exploring and purchasing virtual land. Users can fly over parcels, view ownership history, and place bids. Built with Three.js and React Three Fiber for a seamless in-browser 3D experience.",
     tags: ["Three.js", "R3F", "Polygon"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://picsum.photos/800/600?random=5",
+    image: "https://images.unsplash.com/photo-1614728263952-84ea206f0c41?q=80&w=800&auto=format&fit=crop",
     category: 'frontend',
     stack: ["React", "Three.js", "React Three Fiber", "Zustand"],
     highlights: [
@@ -119,7 +120,7 @@ export const projects: Project[] = [
     longDescription: "Facilitating seamless asset transfers across fragmented blockchains. This bridge uses a lock-and-mint mechanism securitized by a decentralized set of validators. The UI prioritizes trust and clarity, showing users exactly where their funds are at every step of the cross-chain journey.",
     tags: ["Rust", "React", "Wormhole SDK"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://picsum.photos/800/600?random=6",
+    image: "https://images.unsplash.com/photo-1639322537231-2f206e06af84?q=80&w=800&auto=format&fit=crop",
     category: 'web3',
     highlights: [
       "Designed a fail-safe UI that prevents user errors during critical transactions",
@@ -133,7 +134,7 @@ export const projects: Project[] = [
     description: "Dashboard tracking highest APY farms across multiple protocols with one-click staking capabilities.",
     tags: ["Next.js", "Redux", "The Graph"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://picsum.photos/800/600?random=7",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
     category: "web3",
     highlights: ["Detailed APY analytics"]
   },
@@ -143,7 +144,7 @@ export const projects: Project[] = [
     description: "Decentralized identity verification system using zk-SNARKs for privacy-preserving authentication.",
     tags: ["Circom", "SnarkJS", "React"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://picsum.photos/800/600?random=8",
+    image: "https://images.unsplash.com/photo-1563986768-60004d048ea4?q=80&w=800&auto=format&fit=crop",
     category: "web3",
     highlights: ["Zero-knowledge proof implementation"]
   },
@@ -153,7 +154,7 @@ export const projects: Project[] = [
     description: "A censorship-resistant social media platform built on the Lens Protocol social graph.",
     tags: ["Lens Protocol", "Next.js", "Arweave"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://picsum.photos/800/600?random=9",
+    image: "https://images.unsplash.com/photo-1522542550221-31fd195b6a28?q=80&w=800&auto=format&fit=crop",
     category: "web3",
     highlights: ["Arweave data storage"]
   },
@@ -163,7 +164,7 @@ export const projects: Project[] = [
     description: "Real-time portfolio tracker supporting 50+ chains with historical performance visualization.",
     tags: ["Vue.js", "Chart.js", "Covalent API"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://picsum.photos/800/600?random=10",
+    image: "https://images.unsplash.com/photo-1611974762655-6c6467000d11?q=80&w=800&auto=format&fit=crop",
     category: "frontend",
     highlights: ["Multi-chain data aggregation"]
   },
@@ -173,7 +174,7 @@ export const projects: Project[] = [
     description: "Kickstarter alternative running on smart contracts with milestone-based fund releasing.",
     tags: ["Solidity", "Hardhat", "React"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://picsum.photos/800/600?random=11",
+    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=800&auto=format&fit=crop",
     category: "web3",
     highlights: ["Smart contract escrow"]
   },
@@ -183,7 +184,7 @@ export const projects: Project[] = [
     description: "Browser extension and web app to predict optimal transaction times to save on gas fees.",
     tags: ["Etherscan API", "React", "Chrome Ext"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://picsum.photos/800/600?random=12",
+    image: "https://images.unsplash.com/photo-1621416848440-276911377bcc?q=80&w=800&auto=format&fit=crop",
     category: "tools",
     highlights: ["Real-time gas tracking"]
   },
@@ -272,7 +273,7 @@ export const projects: Project[] = [
     tags: ["React Js", "TailwindCSS", "Material UI", "MySQL"],
     repoUrl: "https://github.com/Femi-Benjamin/HealthCare_App",
     liveUrl: "https://healthcare-app.vercel.app/",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070",
+    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=800&auto=format&fit=crop",
     category: 'frontend',
     highlights: ["Patient record management", "Appointment scheduling", "Resource allocation tracking"],
   },
