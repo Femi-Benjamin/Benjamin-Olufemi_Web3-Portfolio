@@ -11,8 +11,7 @@ import cardify from './components/images/cardify.png';
 import animefinance from './components/images/animefinance.png';
 import personarise from './components/images/personarise.png';
 import ben from './components/images/ben.jpg';
-
-// Local static images for Web3 / Blockchain projects
+// Static images for Web3 / Blockchain projects
 import defiExchangeProImage from './assets/defi-exchange-pro.svg';
 import nftMarketplaceImage from './assets/nft-marketplace.svg';
 import daoGovernanceDashboardImage from './assets/dao-governance-dashboard.svg';
@@ -241,7 +240,7 @@ export const projects: Project[] = [
     description: "A dynamic landing page and platform for Titan Leap, showcasing services and offerings.",
     tags: ["React Js", "Typescript", "TailwindCSS"],
     repoUrl: "https://github.com/Femi-Benjamin/Titan-leap",
-    liveUrl: "https://titan-leap-ruddy.vercel.app/",
+    liveUrl: "https://www.titanleap.co/",
     image: titan,
     category: 'frontend',
     highlights: ["Modern landing page design", "Service showcase", "Responsive layout"],
