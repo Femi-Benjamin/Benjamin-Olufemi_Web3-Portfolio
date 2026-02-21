@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg-crowd" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617" />
+      <stop offset="0.5" stop-color="#0f172a" />
+      <stop offset="1" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-crowd)" />
+  <rect x="380" y="230" width="840" height="440" rx="40" fill="#020617ee" stroke="#f97316aa" stroke-width="4" />
+  <rect x="430" y="280" width="240" height="320" rx="24" fill="#111827" />
+  <rect x="680" y="300" width="240" height="300" rx="24" fill="#111827" />
+  <rect x="930" y="320" width="240" height="280" rx="24" fill="#111827" />
+  <rect x="460" y="540" width="180" height="40" rx="10" fill="#f97316" />
+  <rect x="710" y="520" width="180" height="60" rx="10" fill="#fb923c" />
+  <rect x="960" y="500" width="180" height="80" rx="10" fill="#fed7aa" />
+  <text x="550" y="330" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#f9fafb">
+    Seed
+  </text>
+  <text x="800" y="350" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#f9fafb">
+    Series A
+  </text>
+  <text x="1050" y="370" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#111827">
+    Milestone
+  </text>
+  <text x="800" y="720" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="42" fill="#f9fafb">
+    Web3 Crowdfunding
+  </text>
+  <text x="800" y="764" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#e5e7eb" letter-spacing="4">
+    WEB3 � ESCROW � MILESTONES
+  </text>
+</svg>
+

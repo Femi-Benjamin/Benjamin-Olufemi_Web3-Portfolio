@@ -12,6 +12,16 @@ import animefinance from './components/images/animefinance.png';
 import personarise from './components/images/personarise.png';
 import ben from './components/images/ben.jpg';
 
+// Local static images for Web3 / Blockchain projects
+import defiExchangeProImage from './assets/defi-exchange-pro.svg';
+import nftMarketplaceImage from './assets/nft-marketplace.svg';
+import daoGovernanceDashboardImage from './assets/dao-governance-dashboard.svg';
+import crossChainBridgeImage from './assets/cross-chain-bridge.svg';
+import yieldFarmingAggregatorImage from './assets/yield-farming-aggregator.svg';
+import identityOracleImage from './assets/identity-oracle.svg';
+import decentralizedSocialImage from './assets/decentralized-social.svg';
+import web3CrowdfundingImage from './assets/web3-crowdfunding.svg';
+
 export const projects: Project[] = [
   // Original Projects
   {
@@ -22,7 +32,7 @@ export const projects: Project[] = [
     tags: ["React", "Web3.js", "Tailwind", "Dex API"],
     repoUrl: "https://github.com/benjamin-olufemi",
     liveUrl: "https://example.com/demo",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=800&auto=format&fit=crop",
+    image: defiExchangeProImage,
     screenshots: ["https://picsum.photos/800/600?random=101", "https://picsum.photos/800/600?random=102"],
     category: 'web3',
     role: "Lead Frontend Engineer",
@@ -45,7 +55,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Solidity", "IPFS", "Pinata"],
     repoUrl: "https://github.com/benjamin-olufemi",
     liveUrl: "https://example.com/demo",
-    image: "https://images.unsplash.com/photo-1643101809744-246a47803b25?q=80&w=800&auto=format&fit=crop",
+    image: nftMarketplaceImage,
     category: 'web3',
     role: "Full Stack Web3 Developer",
     stack: ["Next.js", "Wagmi", "Solidity", "IPFS", "Framer Motion"],
@@ -62,7 +72,7 @@ export const projects: Project[] = [
     longDescription: "A governance hub for DAOs to manage proposals, treasury, and voting. It introduces quadratic voting to prevent whale dominance and integrates with Snapshot for gasless off-chain voting. The dashboard provides deep analytics into voter participation and proposal outcomes.",
     tags: ["TypeScript", "Ethers.js", "GraphQL"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://images.unsplash.com/photo-1551288049-bbbda5366392?q=80&w=800&auto=format&fit=crop",
+    image: daoGovernanceDashboardImage,
     category: 'web3',
     highlights: [
       "Integrated Snapshot API for gasless voting, increasing participation by 300%",
@@ -120,7 +130,7 @@ export const projects: Project[] = [
     longDescription: "Facilitating seamless asset transfers across fragmented blockchains. This bridge uses a lock-and-mint mechanism securitized by a decentralized set of validators. The UI prioritizes trust and clarity, showing users exactly where their funds are at every step of the cross-chain journey.",
     tags: ["Rust", "React", "Wormhole SDK"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://images.unsplash.com/photo-1639322537231-2f206e06af84?q=80&w=800&auto=format&fit=crop",
+    image: crossChainBridgeImage,
     category: 'web3',
     highlights: [
       "Designed a fail-safe UI that prevents user errors during critical transactions",
@@ -134,7 +144,7 @@ export const projects: Project[] = [
     description: "Dashboard tracking highest APY farms across multiple protocols with one-click staking capabilities.",
     tags: ["Next.js", "Redux", "The Graph"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
+    image: yieldFarmingAggregatorImage,
     category: "web3",
     highlights: ["Detailed APY analytics"]
   },
@@ -144,7 +154,7 @@ export const projects: Project[] = [
     description: "Decentralized identity verification system using zk-SNARKs for privacy-preserving authentication.",
     tags: ["Circom", "SnarkJS", "React"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://images.unsplash.com/photo-1563986768-60004d048ea4?q=80&w=800&auto=format&fit=crop",
+    image: "identity-oracle",
     category: "web3",
     highlights: ["Zero-knowledge proof implementation"]
   },
@@ -154,7 +164,7 @@ export const projects: Project[] = [
     description: "A censorship-resistant social media platform built on the Lens Protocol social graph.",
     tags: ["Lens Protocol", "Next.js", "Arweave"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://images.unsplash.com/photo-1522542550221-31fd195b6a28?q=80&w=800&auto=format&fit=crop",
+    image: decentralizedSocialImage,
     category: "web3",
     highlights: ["Arweave data storage"]
   },
@@ -174,7 +184,7 @@ export const projects: Project[] = [
     description: "Kickstarter alternative running on smart contracts with milestone-based fund releasing.",
     tags: ["Solidity", "Hardhat", "React"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=800&auto=format&fit=crop",
+    image: web3CrowdfundingImage,
     category: "web3",
     highlights: ["Smart contract escrow"]
   },

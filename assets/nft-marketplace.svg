@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg-nft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617" />
+      <stop offset="0.5" stop-color="#4c1d95" />
+      <stop offset="1" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-nft)" />
+  <rect x="380" y="200" width="840" height="460" rx="40" fill="#020617dd" stroke="#f97316aa" stroke-width="4" />
+  <rect x="430" y="250" width="180" height="220" rx="24" fill="#1d293b" stroke="#a855f7" stroke-width="3" />
+  <rect x="710" y="250" width="180" height="220" rx="24" fill="#1d293b" stroke="#22d3ee" stroke-width="3" />
+  <rect x="990" y="250" width="180" height="220" rx="24" fill="#1d293b" stroke="#facc15" stroke-width="3" />
+  <circle cx="520" cy="290" r="40" fill="#a855f7" />
+  <circle cx="800" cy="290" r="40" fill="#22d3ee" />
+  <circle cx="1080" cy="290" r="40" fill="#facc15" />
+  <rect x="430" y="500" width="740" height="90" rx="18" fill="#020617" stroke="#e5e7eb33" />
+  <text x="800" y="360" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="42" fill="#f9fafb">
+    NFT Marketplace
+  </text>
+  <text x="800" y="410" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#e5e7eb" letter-spacing="4">
+    WEB3 � ERC-721 � AUCTIONS
+  </text>
+</svg>
+

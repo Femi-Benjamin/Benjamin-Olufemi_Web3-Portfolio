@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg-bridge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617" />
+      <stop offset="0.5" stop-color="#0f172a" />
+      <stop offset="1" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-bridge)" />
+  <path d="M200 620 C400 420 1200 420 1400 620" fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round" />
+  <path d="M260 620 C430 470 1170 470 1340 620" fill="none" stroke="#0ea5e9" stroke-width="6" stroke-linecap="round" stroke-dasharray="8 10" />
+  <circle cx="260" cy="620" r="40" fill="#22d3ee" />
+  <circle cx="800" cy="460" r="40" fill="#22c55e" />
+  <circle cx="1340" cy="620" r="40" fill="#eab308" />
+  <text x="260" y="620" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#020617" dy="6">
+    ETH
+  </text>
+  <text x="800" y="460" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#020617" dy="6">
+    BRIDGE
+  </text>
+  <text x="1340" y="620" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#020617" dy="6">
+    SOL
+  </text>
+  <text x="800" y="320" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="42" fill="#f9fafb">
+    Cross-Chain Bridge
+  </text>
+  <text x="800" y="368" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#e5e7eb" letter-spacing="4">
+    WEB3 � INTEROPERABILITY
+  </text>
+</svg>
+
