@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg-gas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617" />
+      <stop offset="0.5" stop-color="#1c1917" />
+      <stop offset="1" stop-color="#ea580c" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-gas)" />
+  <!-- Background accents -->
+  <circle cx="1350" cy="200" r="120" fill="#ea580c11" />
+  <circle cx="250" cy="670" r="140" fill="#f59e0b11" />
+  <!-- Main gauge container -->
+  <circle cx="800" cy="420" r="200" fill="#020617dd" stroke="#ea580c55" stroke-width="6" />
+  <circle cx="800" cy="420" r="170" fill="none" stroke="#1f293766" stroke-width="20" />
+  <!-- Gauge arc (showing ~70% fill) -->
+  <circle cx="800" cy="420" r="170" fill="none" stroke="#ea580c" stroke-width="20" stroke-linecap="round" stroke-dasharray="748 320" transform="rotate(-90 800 420)" />
+  <!-- Gauge ticks -->
+  <line x1="800" y1="258" x2="800" y2="278" stroke="#f97316" stroke-width="3" />
+  <line x1="635" y1="340" x2="645" y2="355" stroke="#f97316" stroke-width="3" />
+  <line x1="640" y1="530" x2="655" y2="520" stroke="#f97316" stroke-width="3" />
+  <line x1="960" y1="530" x2="945" y2="520" stroke="#f97316" stroke-width="3" />
+  <line x1="965" y1="340" x2="955" y2="355" stroke="#f97316" stroke-width="3" />
+  <!-- Gwei display -->
+  <text x="800" y="400" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="56" fill="#f97316" font-weight="bold">32</text>
+  <text x="800" y="440" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" fill="#9ca3af" letter-spacing="3">GWEI</text>
+  <!-- Speed tiers -->
+  <rect x="360" y="680" width="240" height="70" rx="16" fill="#020617cc" stroke="#22c55e88" stroke-width="2" />
+  <text x="480" y="706" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" fill="#9ca3af" letter-spacing="2">SLOW</text>
+  <text x="480" y="734" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#22c55e" font-weight="bold">18 Gwei</text>
+  <rect x="680" y="680" width="240" height="70" rx="16" fill="#020617cc" stroke="#f59e0b88" stroke-width="2" />
+  <text x="800" y="706" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" fill="#9ca3af" letter-spacing="2">STANDARD</text>
+  <text x="800" y="734" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#f59e0b" font-weight="bold">32 Gwei</text>
+  <rect x="1000" y="680" width="240" height="70" rx="16" fill="#020617cc" stroke="#ef444488" stroke-width="2" />
+  <text x="1120" y="706" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" fill="#9ca3af" letter-spacing="2">FAST</text>
+  <text x="1120" y="734" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#ef4444" font-weight="bold">58 Gwei</text>
+  <!-- Title -->
+  <text x="800" y="130" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="42" fill="#f9fafb">
+    Gas Fee Estimator
+  </text>
+  <text x="800" y="178" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#e5e7eb" letter-spacing="4">
+    REAL-TIME · GAS TRACKING · OPTIMIZER
+  </text>
+</svg>

@@ -21,6 +21,9 @@ import yieldFarmingAggregatorImage from './assets/yield-farming-aggregator.svg';
 import identityOracleImage from './assets/identity-oracle.svg';
 import decentralizedSocialImage from './assets/decentralized-social.svg';
 import web3CrowdfundingImage from './assets/web3-crowdfunding.svg';
+import metaverseRealEstateImage from './assets/metaverse-real-estate.svg';
+import cryptoPortfolioTrackerImage from './assets/crypto-portfolio-tracker.svg';
+import gasFeeEstimatorImage from './assets/gas-fee-estimator.svg';
 
 export const projects: Project[] = [
   // Original Projects
@@ -114,7 +117,7 @@ export const projects: Project[] = [
     longDescription: "An immersive 3D map interface for exploring and purchasing virtual land. Users can fly over parcels, view ownership history, and place bids. Built with Three.js and React Three Fiber for a seamless in-browser 3D experience.",
     tags: ["Three.js", "R3F", "Polygon"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://images.unsplash.com/photo-1614728263952-84ea206f0c41?q=80&w=800&auto=format&fit=crop",
+    image: metaverseRealEstateImage,
     category: 'frontend',
     stack: ["React", "Three.js", "React Three Fiber", "Zustand"],
     highlights: [
@@ -154,7 +157,7 @@ export const projects: Project[] = [
     description: "Decentralized identity verification system using zk-SNARKs for privacy-preserving authentication.",
     tags: ["Circom", "SnarkJS", "React"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "identity-oracle",
+    image: identityOracleImage,
     category: "web3",
     highlights: ["Zero-knowledge proof implementation"]
   },
@@ -174,7 +177,7 @@ export const projects: Project[] = [
     description: "Real-time portfolio tracker supporting 50+ chains with historical performance visualization.",
     tags: ["Vue.js", "Chart.js", "Covalent API"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://images.unsplash.com/photo-1611974762655-6c6467000d11?q=80&w=800&auto=format&fit=crop",
+    image: cryptoPortfolioTrackerImage,
     category: "frontend",
     highlights: ["Multi-chain data aggregation"]
   },
@@ -194,7 +197,7 @@ export const projects: Project[] = [
     description: "Browser extension and web app to predict optimal transaction times to save on gas fees.",
     tags: ["Etherscan API", "React", "Chrome Ext"],
     repoUrl: "https://github.com/benjamin-olufemi",
-    image: "https://images.unsplash.com/photo-1621416848440-276911377bcc?q=80&w=800&auto=format&fit=crop",
+    image: gasFeeEstimatorImage,
     category: "tools",
     highlights: ["Real-time gas tracking"]
   },

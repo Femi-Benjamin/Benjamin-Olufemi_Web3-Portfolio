@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg-meta" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617" />
+      <stop offset="0.5" stop-color="#1e1b4b" />
+      <stop offset="1" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-meta)" />
+  <!-- Grid floor perspective -->
+  <line x1="200" y1="700" x2="800" y2="380" stroke="#7c3aed44" stroke-width="2" />
+  <line x1="400" y1="700" x2="860" y2="380" stroke="#7c3aed44" stroke-width="2" />
+  <line x1="600" y1="700" x2="920" y2="380" stroke="#7c3aed44" stroke-width="2" />
+  <line x1="800" y1="700" x2="980" y2="380" stroke="#7c3aed44" stroke-width="2" />
+  <line x1="1000" y1="700" x2="1040" y2="380" stroke="#7c3aed44" stroke-width="2" />
+  <line x1="1200" y1="700" x2="1100" y2="380" stroke="#7c3aed44" stroke-width="2" />
+  <line x1="1400" y1="700" x2="1160" y2="380" stroke="#7c3aed44" stroke-width="2" />
+  <!-- Horizontal grid lines -->
+  <line x1="300" y1="600" x2="1300" y2="600" stroke="#7c3aed33" stroke-width="1.5" />
+  <line x1="400" y1="520" x2="1200" y2="520" stroke="#7c3aed33" stroke-width="1.5" />
+  <line x1="500" y1="460" x2="1100" y2="460" stroke="#7c3aed33" stroke-width="1.5" />
+  <!-- 3D Buildings -->
+  <!-- Building 1 -->
+  <rect x="480" y="380" width="120" height="220" rx="4" fill="#4c1d9588" stroke="#a78bfa" stroke-width="3" />
+  <rect x="490" y="400" width="40" height="30" rx="4" fill="#c4b5fd22" />
+  <rect x="550" y="400" width="40" height="30" rx="4" fill="#c4b5fd22" />
+  <rect x="490" y="450" width="40" height="30" rx="4" fill="#22d3ee44" />
+  <rect x="550" y="450" width="40" height="30" rx="4" fill="#22d3ee44" />
+  <rect x="490" y="500" width="40" height="30" rx="4" fill="#c4b5fd22" />
+  <rect x="550" y="500" width="40" height="30" rx="4" fill="#c4b5fd22" />
+  <!-- Building 2 (taller) -->
+  <rect x="660" y="320" width="140" height="280" rx="4" fill="#4c1d9588" stroke="#a78bfa" stroke-width="3" />
+  <rect x="675" y="340" width="45" height="35" rx="4" fill="#22d3ee44" />
+  <rect x="740" y="340" width="45" height="35" rx="4" fill="#22d3ee44" />
+  <rect x="675" y="395" width="45" height="35" rx="4" fill="#c4b5fd22" />
+  <rect x="740" y="395" width="45" height="35" rx="4" fill="#c4b5fd22" />
+  <rect x="675" y="450" width="45" height="35" rx="4" fill="#22d3ee44" />
+  <rect x="740" y="450" width="45" height="35" rx="4" fill="#22d3ee44" />
+  <rect x="675" y="505" width="45" height="35" rx="4" fill="#c4b5fd22" />
+  <rect x="740" y="505" width="45" height="35" rx="4" fill="#c4b5fd22" />
+  <!-- Building 3 -->
+  <rect x="860" y="360" width="110" height="240" rx="4" fill="#4c1d9588" stroke="#a78bfa" stroke-width="3" />
+  <rect x="875" y="380" width="35" height="28" rx="4" fill="#c4b5fd22" />
+  <rect x="920" y="380" width="35" height="28" rx="4" fill="#c4b5fd22" />
+  <rect x="875" y="425" width="35" height="28" rx="4" fill="#22d3ee44" />
+  <rect x="920" y="425" width="35" height="28" rx="4" fill="#22d3ee44" />
+  <rect x="875" y="470" width="35" height="28" rx="4" fill="#c4b5fd22" />
+  <rect x="920" y="470" width="35" height="28" rx="4" fill="#c4b5fd22" />
+  <!-- Floating parcel indicator -->
+  <circle cx="1200" cy="300" r="60" fill="#7c3aed22" stroke="#a78bfa" stroke-width="3" stroke-dasharray="8 6" />
+  <text x="1200" y="306" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" fill="#c4b5fd">PARCEL</text>
+  <!-- Floating glow orbs -->
+  <circle cx="350" cy="250" r="80" fill="#7c3aed11" />
+  <circle cx="1350" cy="200" r="100" fill="#22d3ee11" />
+  <!-- Title -->
+  <text x="800" y="180" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="42" fill="#f9fafb">
+    Metaverse Real Estate
+  </text>
+  <text x="800" y="230" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#e5e7eb" letter-spacing="4">
+    3D · VIRTUAL LAND · DECENTRALAND
+  </text>
+</svg>
