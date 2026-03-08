@@ -32,10 +32,10 @@ export const projects: Project[] = [
     description: "A high-performance decentralized trading interface aggregating liquidity for optimal swap rates.",
     longDescription: "DeFi Exchange Pro is a production-ready DEX interface designed for professional traders. It features real-time TradingView charting, sub-second price updates via WebSocket, and a smart routing algorithm that splits trades across multiple pools to minimize slippage. The application is built with performance in mind, using optimistic UI updates and memoized heavy computations.",
     tags: ["React", "Web3.js", "Tailwind", "Dex API"],
-    repoUrl: "https://github.com/benjamin-olufemi",
-    liveUrl: "https://example.com/demo",
+    repoUrl: "https://github.com/Femi-Benjamin/Defi-Exchange-Pro",
+    liveUrl: "https://defi-exchange-pro.vercel.app/",
     image: defiExchangeProImage,
-    screenshots: ["https://picsum.photos/800/600?random=101", "https://picsum.photos/800/600?random=102"],
+    screenshots: [defiExchangeProImage, cryptoPortfolioTrackerImage, gasFeeEstimatorImage],
     category: 'web3',
     role: "Lead Frontend Engineer",
     stack: ["React", "TypeScript", "Viem", "TailwindCSS", "Recharts"],
@@ -333,3 +333,4 @@ export const projects: Project[] = [
     highlights: ["Personalized content delivery", "User preference management", "Dynamic themes"],
   },
 ];
+
