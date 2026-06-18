@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
         </motion.div>
 
         {/* Filters & Search */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12 sticky top-20 z-35 bg-white/80 backdrop-blur-md py-4 -mx-4 px-4 md:static md:bg-transparent md:p-0 transition-colors">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12 sticky top-20 z-35 bg-white/80 dark:bg-[#0b0c16]/80 backdrop-blur-md py-4 -mx-4 px-4 md:static md:bg-transparent md:p-0 transition-colors">
           {/* Category Tabs */}
           <div className="flex p-1.5 bg-zinc-100 dark:bg-[#101438]/60 rounded-full border border-zinc-200 dark:border-[#00f2fe]/10 backdrop-blur-sm overflow-x-auto max-w-full no-scrollbar">
             {(["all", "frontend", "web3", "tools"] as const).map((category) => (

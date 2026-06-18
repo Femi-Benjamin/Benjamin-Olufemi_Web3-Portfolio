@@ -71,28 +71,29 @@
       html,
       body {
         background-color: #e5e7eb; /* Tailwind gray-200 background */
-        background-image: radial-gradient(
-          #9ca3af 1.2px,
-          transparent 1.2px
-        ); /* Gray-400 dots */
-        background-size: 24px 24px;
         color: #0f172a; /* Strong readable slate-900 */
         overflow-x: hidden;
         width: 100%;
         max-width: 100%;
-        transition:
-          background-color 0.3s ease,
-          color 0.3s ease;
+        transition: background-color 0.3s ease, color 0.3s ease;
       }
       html.dark,
       html.dark body {
         background-color: #0b0c16; /* Pave's dark slate-navy background */
-        background-image: radial-gradient(
-          #22253a 1.2px,
-          transparent 1.2px
-        ); /* Dark mode dots */
-        background-size: 24px 24px;
         color: #f3f4f6;
+      }
+      /* Dotted grid background pattern - only on tablet and desktop (min-width: 768px) */
+      @media (min-width: 768px) {
+        html,
+        body {
+          background-image: radial-gradient(#9ca3af 1.2px, transparent 1.2px); /* Gray-400 dots */
+          background-size: 24px 24px;
+        }
+        html.dark,
+        html.dark body {
+          background-image: radial-gradient(#22253a 1.2px, transparent 1.2px); /* Dark mode dots */
+          background-size: 24px 24px;
+        }
       }
       .glass-panel {
         background: rgba(255, 255, 255, 0.75);
