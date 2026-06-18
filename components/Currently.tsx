@@ -6,7 +6,7 @@ const Currently: React.FC = () => {
   return (
     <section className="py-12 border-y border-zinc-200 dark:border-[#00f2fe]/10 bg-white/65 dark:bg-[#101438]/45 backdrop-blur-sm transition-colors duration-300">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+        <div className="flex flex-col md:flex-row justify-evenly items-start md:items-center gap-8">
           {/* Status Item 1: Building */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
