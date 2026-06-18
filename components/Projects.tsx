@@ -35,7 +35,10 @@ const Projects: React.FC = () => {
   const selectedProject = projects.find((p) => p.id === selectedId);
 
   return (
-    <section id="work" className="py-24 bg-void relative">
+    <section
+      id="work"
+      className="py-24 bg-transparent relative transition-colors duration-300"
+    >
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
@@ -44,27 +47,27 @@ const Projects: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-6xl font-display font-bold text-gray-900 dark:text-white mb-4">
             Selected Works
           </h2>
-          <p className="text-gray-400 max-w-2xl text-lg">
+          <p className="text-gray-600 dark:text-zinc-400 max-w-2xl text-lg font-light">
             A curation of high-impact applications demonstrating expertise in
             Web3 protocols, frontend performance, and complex state management.
           </p>
         </motion.div>
 
         {/* Filters & Search */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12 sticky top-20 z-30 bg-void/80 backdrop-blur-md py-4 -mx-4 px-4 md:static md:bg-transparent md:p-0">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12 sticky top-20 z-35 bg-white/80 backdrop-blur-md py-4 -mx-4 px-4 md:static md:bg-transparent md:p-0 transition-colors">
           {/* Category Tabs */}
-          <div className="flex p-1 bg-white/5 rounded-full border border-white/5 backdrop-blur-sm overflow-x-auto max-w-full no-scrollbar">
+          <div className="flex p-1.5 bg-zinc-100 dark:bg-[#101438]/60 rounded-full border border-zinc-200 dark:border-[#00f2fe]/10 backdrop-blur-sm overflow-x-auto max-w-full no-scrollbar">
             {(["all", "frontend", "web3", "tools"] as const).map((category) => (
               <button
                 key={category}
                 onClick={() => setFilter(category)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 capitalize whitespace-nowrap ${
+                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 capitalize whitespace-nowrap active:scale-95 ${
                   filter === category
-                    ? "bg-neon-blue text-black shadow-[0_0_15px_rgba(0,243,255,0.3)]"
-                    : "text-gray-400 hover:text-white hover:bg-white/5"
+                    ? "bg-gray-950 text-white dark:bg-gradient-to-r dark:from-[#00f2fe] dark:to-[#0072ff] dark:text-white shadow-md shadow-cyan-500/10"
+                    : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-white/5"
                 }`}
               >
                 {category === "web3" ? "Web3 & Blockchain" : category}
@@ -75,7 +78,7 @@ const Projects: React.FC = () => {
           {/* Search Input */}
           <div className="relative w-full md:w-64 group">
             <Search
-              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-neon-blue transition-colors"
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500 group-focus-within:text-zinc-800 dark:group-focus-within:text-white transition-colors"
               size={18}
             />
             <input
@@ -83,7 +86,7 @@ const Projects: React.FC = () => {
               placeholder="Search projects..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-white/5 border border-white/10 rounded-full pl-10 pr-4 py-2.5 text-sm text-white focus:outline-none focus:border-neon-blue focus:ring-1 focus:ring-neon-blue/50 transition-all"
+              className="w-full bg-zinc-100/80 dark:bg-[#101438]/45 border border-zinc-200 dark:border-[#00f2fe]/10 rounded-full pl-10 pr-4 py-2.5 text-sm text-gray-900 dark:text-white focus:outline-none focus:border-zinc-400 dark:focus:border-[#00f2fe]/35 transition-all font-light"
             />
           </div>
         </div>
@@ -106,7 +109,7 @@ const Projects: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="col-span-full text-center py-20 text-gray-500"
+                className="col-span-full text-center py-20 text-zinc-500"
               >
                 <p className="text-xl">
                   No projects found matching your criteria.
@@ -116,7 +119,7 @@ const Projects: React.FC = () => {
                     setFilter("all");
                     setSearchQuery("");
                   }}
-                  className="mt-4 text-neon-blue hover:underline"
+                  className="mt-4 text-zinc-800 dark:text-zinc-350 hover:underline"
                 >
                   Clear filters
                 </button>
@@ -130,7 +133,7 @@ const Projects: React.FC = () => {
           <div className="flex justify-center">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="group flex items-center gap-2 px-8 py-3 bg-white/5 border border-white/10 hover:border-white/30 rounded-full text-white transition-all hover:bg-white/10"
+              className="group flex items-center gap-2 px-8 py-3 bg-zinc-100/85 dark:bg-[#101438]/45 border border-zinc-200 dark:border-[#00f2fe]/10 hover:border-zinc-350 dark:hover:border-[#00f2fe]/30 rounded-full text-zinc-900 dark:text-white transition-all hover:bg-zinc-200 dark:hover:bg-[#101438]/80 active:scale-95 hover:-translate-y-0.5 shadow-sm hover:shadow-cyan-500/5"
             >
               <span>
                 {showAll

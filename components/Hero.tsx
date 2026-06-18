@@ -92,23 +92,22 @@ const EthIcon = () => (
 );
 
 const Hero: React.FC = () => {
-  // Detect reduced motion preference if needed, but for now we'll just be careful with motion
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   return (
     <section
       id="home"
-      className="relative min-h-screen w-full flex flex-col pt-20 overflow-x-hidden"
+      className="relative min-h-screen w-full flex flex-col pt-20 overflow-x-hidden transition-colors duration-300"
     >
       {/* Main Hero Area */}
-      <div className="relative flex-1 flex items-center justify-center overflow-hidden bg-void">
+      <div className="relative flex-1 flex items-center justify-center overflow-hidden dark:bg-transparent transition-colors duration-300">
         {/* Background Grid - Subtle */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <div className="absolute inset-0 bg-transparent"></div>
 
         {/* Radial Gradient for depth */}
-        <div className="absolute inset-0 bg-radial-gradient from-purple-900/10 to-transparent opacity-50 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-zinc-500/5 to-transparent dark:from-[#0072ff]/5 dark:to-transparent opacity-60 pointer-events-none"></div>
 
-        {/* Floating Elements - Optimization: Hide deeply layered animations on very small screens if needed, or reduce complexity */}
+        {/* Floating Elements - Glass Badges */}
         <div aria-hidden="true" className="pointer-events-none select-none">
           {/* Code Blocks */}
           <FloatingCard
@@ -118,9 +117,12 @@ const Hero: React.FC = () => {
             duration={isMobile ? 12 : 8}
             className="top-[15%] left-[8%] md:left-[10%]"
           >
-            <div className="glass-panel p-3 md:p-4 rounded-xl border-l-4 border-neon-blue opacity-50 md:opacity-100">
-              <Code className="text-neon-blue mb-2" size={20} />
-              <p className="text-[10px] md:text-xs font-mono text-gray-400">
+            <div className="glass-panel p-3 md:p-4 rounded-2xl border-l-4 border-gray-400 dark:border-[#00f2fe]/40 opacity-50 md:opacity-100">
+              <Code
+                className="text-gray-650 dark:text-[#00f2fe] mb-2"
+                size={20}
+              />
+              <p className="text-[10px] md:text-xs font-mono text-gray-550 dark:text-zinc-400">
                 {"<Frontend />"}
               </p>
             </div>
@@ -133,9 +135,12 @@ const Hero: React.FC = () => {
             duration={isMobile ? 15 : 10}
             className="bottom-[25%] right-[8%] md:right-[10%]"
           >
-            <div className="glass-panel p-3 md:p-4 rounded-xl border-l-4 border-neon-purple opacity-50 md:opacity-100">
-              <Box className="text-neon-purple mb-2" size={20} />
-              <p className="text-[10px] md:text-xs font-mono text-gray-400">
+            <div className="glass-panel p-3 md:p-4 rounded-2xl border-l-4 border-gray-400 dark:border-[#0072ff]/40 opacity-50 md:opacity-100">
+              <Box
+                className="text-gray-650 dark:text-[#0072ff] mb-2"
+                size={20}
+              />
+              <p className="text-[10px] md:text-xs font-mono text-gray-550 dark:text-zinc-400">
                 {"block.num"}
               </p>
             </div>
@@ -148,7 +153,7 @@ const Hero: React.FC = () => {
               duration={6}
               className="top-[20%] right-[20%]"
             >
-              <div className="w-16 h-16 rounded-full glass-panel flex items-center justify-center border border-blue-500/30 shadow-[0_0_15px_rgba(97,218,251,0.3)]">
+              <div className="w-16 h-16 rounded-3xl glass-panel flex items-center justify-center border border-zinc-200/50 dark:border-[#00f2fe]/10 shadow-sm">
                 <ReactIcon />
               </div>
             </FloatingCard>
@@ -158,7 +163,7 @@ const Hero: React.FC = () => {
               duration={9}
               className="bottom-[30%] left-[15%]"
             >
-              <div className="w-20 h-20 rounded-2xl glass-panel flex items-center justify-center rotate-12 border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.2)]">
+              <div className="w-20 h-20 rounded-3xl glass-panel flex items-center justify-center rotate-12 border border-zinc-200/50 dark:border-[#0072ff]/10 shadow-sm">
                 <NextIcon />
               </div>
             </FloatingCard>
@@ -168,7 +173,7 @@ const Hero: React.FC = () => {
               duration={7}
               className="top-[60%] right-[30%] opacity-80 blur-[0.5px]"
             >
-              <div className="w-14 h-14 rounded-lg glass-panel flex items-center justify-center border border-gray-500/30">
+              <div className="w-14 h-14 rounded-2xl glass-panel flex items-center justify-center border border-zinc-200/50 dark:border-[#00f2fe]/15">
                 <EthIcon />
               </div>
             </FloatingCard>
@@ -178,8 +183,8 @@ const Hero: React.FC = () => {
               duration={12}
               className="top-[10%] left-[40%] opacity-30 blur-[2px] scale-50"
             >
-              <div className="w-24 h-24 rounded-full border border-white/10 flex items-center justify-center">
-                <Globe className="text-white/20" size={40} />
+              <div className="w-24 h-24 rounded-full border border-zinc-200/30 dark:border-white/5 flex items-center justify-center">
+                <Globe className="text-gray-300 dark:text-white/20" size={40} />
               </div>
             </FloatingCard>
           </div>
@@ -192,8 +197,8 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="inline-block px-4 py-1.5 mb-6 rounded-full border border-neon-blue/30 bg-neon-blue/10 text-neon-blue font-mono text-xs md:text-sm tracking-widest uppercase backdrop-blur-md">
-              Frontend & Web3 Engineer
+            <h2 className="inline-flex items-center justify-center px-4 py-2 mb-8 bg-zinc-100 dark:bg-white/5 border border-zinc-200 dark:border-white/10 text-gray-800 dark:text-zinc-300 text-sm font-medium rounded-full shadow-sm backdrop-blur-sm transition-colors">
+              <span className="mr-2">⚡</span> Frontend & Web3 Engineer
             </h2>
           </motion.div>
 
@@ -201,11 +206,11 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-            className="text-5xl sm:text-7xl md:text-8xl font-display font-bold text-white tracking-tighter mb-6 leading-[0.9] mix-blend-difference"
+            className="text-5xl sm:text-7xl md:text-8xl font-display font-black tracking-tight mb-8 leading-[1.05] text-gray-900 dark:text-white"
           >
             BENJAMIN
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-500 via-gray-700 to-black dark:from-[#00f2fe] dark:to-[#0072ff]">
               OLUFEMI
             </span>
           </motion.h1>
@@ -214,26 +219,30 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed mb-10"
+            className="text-lg md:text-xl text-gray-650 dark:text-zinc-350 max-w-2xl mx-auto font-light leading-relaxed mb-12"
           >
             I build fast, scalable, and user-focused dApps —{" "}
             <br className="hidden md:block" />
             from{" "}
-            <span className="text-white font-semibold">
+            <span className="text-gray-900 dark:text-white font-semibold">
               smart contract interaction
             </span>{" "}
-            to <span className="text-white font-semibold">production UI</span>.
+            to{" "}
+            <span className="text-gray-900 dark:text-white font-semibold">
+              production UI
+            </span>
+            .
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-5"
           >
             <a
               href="#work"
-              className="w-full sm:w-auto px-8 py-4 bg-white text-black rounded-full font-bold flex items-center justify-center gap-2 hover:bg-neon-blue transition-colors duration-300 group"
+              className="w-full sm:w-auto px-10 py-3 bg-gray-950 text-white hover:bg-black dark:bg-gradient-to-r dark:from-[#00f2fe] dark:to-[#0072ff] dark:text-white dark:hover:opacity-95 rounded-full font-bold flex items-center justify-center gap-2 transition-all duration-300 shadow-md hover:shadow-cyan-500/10 hover:-translate-y-0.5 active:scale-95 group"
             >
               <span>View Projects</span>
               <ArrowDown
@@ -246,21 +255,21 @@ const Hero: React.FC = () => {
               <a
                 href="/resume.pdf"
                 target="_blank"
-                className="flex-1 sm:flex-none px-6 py-4 bg-white/5 border border-white/10 text-white rounded-full font-medium flex items-center justify-center gap-2 hover:bg-white/10 hover:border-white/30 transition-all group"
+                className="flex-1 sm:flex-none px-6 py-3 bg-zinc-100/80 dark:bg-white/5 border border-zinc-200 dark:border-[#00f2fe]/10 text-gray-900 dark:text-zinc-300 rounded-full font-medium flex items-center justify-center gap-2 hover:bg-zinc-200 dark:hover:bg-[#00f2fe]/5 hover:border-zinc-300 dark:hover:border-[#00f2fe]/30 active:scale-95 hover:-translate-y-0.5 transition-all group"
               >
                 <Download
                   size={18}
-                  className="text-gray-400 group-hover:text-white transition-colors"
+                  className="text-gray-500 dark:text-gray-400 group-hover:text-gray-950 dark:group-hover:text-white transition-colors"
                 />
                 <span>CV</span>
               </a>
               <a
                 href="#contact"
-                className="flex-1 sm:flex-none px-6 py-4 bg-white/5 border border-white/10 text-white rounded-full font-medium flex items-center justify-center gap-2 hover:bg-white/10 hover:border-white/30 transition-all group"
+                className="flex-1 sm:flex-none px-6 py-4.5 bg-zinc-100/80 dark:bg-white/5 border border-zinc-200 dark:border-[#00f2fe]/10 text-gray-900 dark:text-zinc-300 rounded-full font-medium flex items-center justify-center gap-2 hover:bg-zinc-200 dark:hover:bg-[#00f2fe]/5 hover:border-zinc-300 dark:hover:border-[#00f2fe]/30 active:scale-95 hover:-translate-y-0.5 transition-all group"
               >
                 <MessageSquare
                   size={18}
-                  className="text-gray-400 group-hover:text-white transition-colors"
+                  className="text-gray-500 dark:text-gray-400 group-hover:text-gray-950 dark:group-hover:text-white transition-colors"
                 />
                 <span>Let's Talk</span>
               </a>
@@ -272,7 +281,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 1 }}
-            className="mt-12 text-xs font-mono text-gray-500 uppercase tracking-widest"
+            className="mt-16 text-xs font-mono text-gray-400 dark:text-gray-500 uppercase tracking-widest"
           >
             Nigeria (WAT) • Open to Remote • Contract / Full-time
           </motion.div>

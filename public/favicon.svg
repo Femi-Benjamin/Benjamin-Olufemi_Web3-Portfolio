@@ -1,11 +1,27 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="16" fill="#050505"/>
-  <path d="M18 16H34C40.6274 16 46 21.3726 46 28C46 31.0669 44.8504 33.8687 42.9431 36.035C45.4315 37.9154 47 40.8529 47 44C47 50.6274 41.6274 56 35 56H18V16Z" stroke="url(#paint0_linear)" stroke-width="4"/>
-  <path d="M18 36H36" stroke="#00f3ff" stroke-width="4" stroke-linecap="round"/>
-  <defs>
-    <linearGradient id="paint0_linear" x1="18" y1="16" x2="47" y2="56" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00F3FF"/>
-      <stop offset="1" stop-color="#BC13FE"/>
-    </linearGradient>
-  </defs>
+<svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    circle.outline {
+      stroke: rgba(0, 114, 255, 0.3);
+    }
+    text.logo-text {
+      fill: #1f2937;
+    }
+    circle.dot {
+      fill: #0072ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      circle.outline {
+        stroke: rgba(0, 242, 254, 0.6);
+      }
+      text.logo-text {
+        fill: #ffffff;
+      }
+      circle.dot {
+        fill: #00f2fe;
+      }
+    }
+  </style>
+  <circle cx="50" cy="50" r="40" class="outline" stroke-width="3.5" />
+  <text x="49" y="52" font-family="Georgia, serif" font-size="34" font-weight="bold" class="logo-text" text-anchor="middle" dominant-baseline="central">BO</text>
+  <circle cx="86" cy="67" r="6.5" class="dot" />
 </svg>

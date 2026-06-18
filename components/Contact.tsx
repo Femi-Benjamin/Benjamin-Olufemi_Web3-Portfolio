@@ -45,10 +45,10 @@ const Contact: React.FC = () => {
   return (
     <section
       id="contact"
-      className="py-24 bg-void relative border-t border-white/5"
+      className="py-24 bg-transparent relative border-t border-zinc-200 dark:border-[#00f2fe]/10 transition-colors duration-300"
     >
       {/* Background Glow */}
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-neon-blue/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-zinc-200/30 dark:bg-[#0072ff]/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -59,16 +59,16 @@ const Contact: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-neon-blue font-mono text-sm tracking-widest uppercase mb-4">
+              <h2 className="text-zinc-500 dark:text-zinc-400 font-mono text-sm tracking-widest uppercase mb-4">
                 Contact
               </h2>
-              <h2 className="text-5xl md:text-7xl font-display font-bold text-white mb-6">
+              <h2 className="text-5xl md:text-7xl font-display font-bold text-gray-900 dark:text-white mb-6">
                 Let's Build <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-black dark:from-[#00f2fe] dark:to-[#0072ff]">
                   The Future.
                 </span>
               </h2>
-              <p className="text-xl text-gray-400 mb-8 max-w-lg leading-relaxed">
+              <p className="text-xl text-gray-650 dark:text-zinc-400 mb-8 max-w-lg leading-relaxed font-light">
                 Have a project in mind? Looking for a Web3 partner? Or just want
                 to chat about the metaverse? Drop me a line.
               </p>
@@ -104,34 +104,28 @@ const Contact: React.FC = () => {
             </motion.div>
 
             <div className="mt-12 space-y-4">
-              <div className="flex items-center gap-4 text-gray-300">
-                <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-neon-blue">
+              <div className="flex items-center gap-4 text-gray-600 dark:text-gray-350">
+                <div className="w-12 h-12 rounded-full bg-zinc-100 dark:bg-[#101438]/85 border border-zinc-200 dark:border-[#00f2fe]/15 flex items-center justify-center text-zinc-700 dark:text-[#00f2fe]">
                   <Mail size={20} />
                 </div>
                 <a
                   href="mailto:benjaminolufemi16@gmail.com"
-                  className="text-lg hover:text-white transition-colors"
+                  className="text-lg hover:text-gray-950 dark:hover:text-white transition-colors"
                 >
                   benjaminolufemi16@gmail.com
                 </a>
               </div>
-              <div className="flex items-center gap-4 text-gray-300">
-                <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-neon-blue">
+              <div className="flex items-center gap-4 text-gray-600 dark:text-gray-350">
+                <div className="w-12 h-12 rounded-full bg-zinc-100 dark:bg-[#101438]/85 border border-zinc-200 dark:border-[#00f2fe]/15 flex items-center justify-center text-zinc-700 dark:text-[#0072ff]">
                   <Phone size={20} />
                 </div>
-                <div className="flex flexcol">
+                <div className="flex flex-col">
                   <a
                     href="tel:08160989601"
-                    className="text-lg hover:text-white transition-colors"
+                    className="text-lg hover:text-gray-950 dark:hover:text-white transition-colors"
                   >
                     08160989601
                   </a>
-                  {/* <a
-                    href="tel:08113639891"
-                    className="text-lg hover:text-white transition-colors"
-                  >
-                    08113639891
-                  </a> */}
                 </div>
               </div>
             </div>
@@ -143,22 +137,22 @@ const Contact: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10 relative"
+            className="glass-panel p-8 md:p-10 rounded-3xl border border-slate-300/80 dark:border-[#00f2fe]/10 relative shadow-sm hover:shadow-lg hover:shadow-cyan-500/5 transition-all duration-300"
           >
             {formState === "success" ? (
               <div className="h-[400px] flex flex-col items-center justify-center text-center">
-                <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center text-green-500 mb-6">
+                <div className="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center text-green-500 mb-6 border border-green-500/20">
                   <CheckCircle2 size={40} />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">
+                <h3 className="text-2xl font-bold text-gray-950 dark:text-white mb-2">
                   Message Sent!
                 </h3>
-                <p className="text-gray-400">
+                <p className="text-zinc-500 dark:text-zinc-400">
                   I'll get back to you within 24 hours.
                 </p>
                 <button
                   onClick={() => setFormState("idle")}
-                  className="mt-8 text-neon-blue hover:text-white transition-colors text-sm font-mono uppercase"
+                  className="mt-8 text-zinc-800 dark:text-zinc-350 hover:text-gray-950 dark:hover:text-white transition-colors text-sm font-mono uppercase"
                 >
                   Send Another Message
                 </button>
@@ -169,7 +163,7 @@ const Contact: React.FC = () => {
                   <div className="space-y-2">
                     <label
                       htmlFor="name"
-                      className="text-sm font-mono text-gray-400 uppercase"
+                      className="text-sm font-mono text-zinc-500 dark:text-zinc-400 uppercase"
                     >
                       Name
                     </label>
@@ -177,14 +171,14 @@ const Contact: React.FC = () => {
                       type="text"
                       id="name"
                       required
-                      className="w-full bg-black/30 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-neon-blue focus:ring-1 focus:ring-neon-blue/50 transition-all placeholder:text-white/20"
+                      className="w-full bg-white dark:bg-[#0b0c16]/60 border border-zinc-200 dark:border-[#00f2fe]/10 rounded-2xl p-4 text-gray-900 dark:text-white focus:outline-none focus:border-zinc-400 dark:focus:border-[#00f2fe]/45 dark:focus:ring-1 dark:focus:ring-[#00f2fe]/45 transition-all placeholder:text-zinc-400/50 dark:placeholder:text-white/10 font-light"
                       placeholder="John Doe"
                     />
                   </div>
                   <div className="space-y-2">
                     <label
                       htmlFor="email"
-                      className="text-sm font-mono text-gray-400 uppercase"
+                      className="text-sm font-mono text-zinc-500 dark:text-zinc-400 uppercase"
                     >
                       Email
                     </label>
@@ -192,7 +186,7 @@ const Contact: React.FC = () => {
                       type="email"
                       id="email"
                       required
-                      className="w-full bg-black/30 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-neon-blue focus:ring-1 focus:ring-neon-blue/50 transition-all placeholder:text-white/20"
+                      className="w-full bg-white dark:bg-[#0b0c16]/60 border border-zinc-200 dark:border-[#00f2fe]/10 rounded-2xl p-4 text-gray-900 dark:text-white focus:outline-none focus:border-zinc-400 dark:focus:border-[#00f2fe]/45 dark:focus:ring-1 dark:focus:ring-[#00f2fe]/45 transition-all placeholder:text-zinc-400/50 dark:placeholder:text-white/10 font-light"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -201,25 +195,35 @@ const Contact: React.FC = () => {
                 <div className="space-y-2">
                   <label
                     htmlFor="subject"
-                    className="text-sm font-mono text-gray-400 uppercase"
+                    className="text-sm font-mono text-zinc-500 dark:text-zinc-400 uppercase"
                   >
                     Subject
                   </label>
-                  <select
-                    id="subject"
-                    className="w-full bg-black/30 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-neon-blue focus:ring-1 focus:ring-neon-blue/50 transition-all appearance-none"
-                  >
-                    <option>General Inquiry</option>
-                    <option>Project Proposal</option>
-                    <option>Recruitment</option>
-                    <option>Other</option>
-                  </select>
+                  <div className="relative">
+                    <select
+                      id="subject"
+                      className="w-full bg-white dark:bg-[#0b0c16]/60 border border-zinc-200 dark:border-[#00f2fe]/10 rounded-2xl p-4 text-gray-900 dark:text-white focus:outline-none focus:border-zinc-400 dark:focus:border-[#00f2fe]/45 dark:focus:ring-1 dark:focus:ring-[#00f2fe]/45 transition-all appearance-none font-light"
+                    >
+                      <option className="bg-white dark:bg-[#0b0c16] text-gray-900 dark:text-white">
+                        General Inquiry
+                      </option>
+                      <option className="bg-white dark:bg-[#0b0c16] text-gray-900 dark:text-white">
+                        Project Proposal
+                      </option>
+                      <option className="bg-white dark:bg-[#0b0c16] text-gray-900 dark:text-white">
+                        Recruitment
+                      </option>
+                      <option className="bg-white dark:bg-[#0b0c16] text-gray-900 dark:text-white">
+                        Other
+                      </option>
+                    </select>
+                  </div>
                 </div>
 
                 <div className="space-y-2">
                   <label
                     htmlFor="message"
-                    className="text-sm font-mono text-gray-400 uppercase"
+                    className="text-sm font-mono text-zinc-500 dark:text-zinc-400 uppercase"
                   >
                     Message
                   </label>
@@ -227,7 +231,7 @@ const Contact: React.FC = () => {
                     id="message"
                     required
                     rows={4}
-                    className="w-full bg-black/30 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-neon-blue focus:ring-1 focus:ring-neon-blue/50 transition-all resize-none placeholder:text-white/20"
+                    className="w-full bg-white dark:bg-[#0b0c16]/60 border border-zinc-200 dark:border-[#00f2fe]/10 rounded-2xl p-4 text-gray-900 dark:text-white focus:outline-none focus:border-zinc-400 dark:focus:border-[#00f2fe]/45 dark:focus:ring-1 dark:focus:ring-[#00f2fe]/45 transition-all resize-none placeholder:text-zinc-400/50 dark:placeholder:text-white/10 font-light"
                     placeholder="Tell me about your project..."
                   ></textarea>
                 </div>
@@ -235,7 +239,7 @@ const Contact: React.FC = () => {
                 <button
                   type="submit"
                   disabled={formState === "submitting"}
-                  className="w-full bg-white text-black font-bold py-4 rounded-lg hover:bg-neon-blue transition-all flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full bg-gray-950 text-white hover:bg-black dark:bg-gradient-to-r dark:from-[#00f2fe] dark:to-[#0072ff] dark:text-white font-bold py-4 rounded-full hover:opacity-95 active:scale-95 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-cyan-500/10 transition-all flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {formState === "submitting" ? (
                     <>
@@ -257,16 +261,22 @@ const Contact: React.FC = () => {
           </motion.div>
         </div>
 
-        <div className="mt-32 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+        <div className="mt-24 pt-8 border-t border-zinc-200 dark:border-[#00f2fe]/10 flex flex-col md:flex-row justify-between items-center text-zinc-450 dark:text-zinc-500 text-sm">
           <p>
             &copy; {new Date().getFullYear()} Benjamin Olufemi. All rights
             reserved.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">
+            <a
+              href="#"
+              className="hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a
+              href="#"
+              className="hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
               Terms of Service
             </a>
           </div>
@@ -286,7 +296,7 @@ const SocialButton: React.FC<{
     target="_blank"
     rel="noopener noreferrer"
     aria-label={label}
-    className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-black hover:border-white transition-all duration-300 group"
+    className="w-12 h-12 rounded-full border border-zinc-200 dark:border-[#00f2fe]/10 flex items-center justify-center text-gray-750 dark:text-white hover:bg-gray-950 hover:text-white dark:hover:bg-gradient-to-r dark:hover:from-[#00f2fe] dark:hover:to-[#0072ff] dark:hover:text-white hover:border-gray-950 dark:hover:border-white transition-all duration-300 group"
   >
     {icon}
   </a>
