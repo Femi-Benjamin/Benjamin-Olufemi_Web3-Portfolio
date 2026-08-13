@@ -67,6 +67,12 @@
     <style>
       html {
         scroll-behavior: smooth;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+        -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+      }
+      html::-webkit-scrollbar,
+      body::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome/Safari/Opera */
       }
       html,
       body {
@@ -76,6 +82,8 @@
         width: 100%;
         max-width: 100%;
         transition: background-color 0.3s ease, color 0.3s ease;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+        -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
       }
       html.dark,
       html.dark body {
