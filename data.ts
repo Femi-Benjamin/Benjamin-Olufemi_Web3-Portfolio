@@ -5,25 +5,25 @@ import spendwise from "./components/images/spendwise.png";
 import titan from "./components/images/titan.png";
 import unique from "./components/images/unique.png";
 import shoe from "./components/images/shoe.png";
-// import arctic from "./components/images/arctic.png";
 import elearn from "./components/images/elearn.png";
 import cardify from "./components/images/cardify.png";
-// import animefinance from "./components/images/animefinance.png";
-// import personarise from './components/images/personarise.png';
 import ben from "./components/images/ben.jpg";
 import paceployt from "./components/images/paceployt.png";
+// import arctic from "./components/images/arctic.png";
+// import animefinance from "./components/images/animefinance.png";
+// import personarise from './components/images/personarise.png';
 // Static images for Web3 / Blockchain projects
 import defiExchangeProImage from "./assets/defi-exchange-pro.svg";
 import nftMarketplaceImage from "./assets/nft-marketplace.svg";
 import daoGovernanceDashboardImage from "./assets/dao-governance-dashboard.svg";
 import crossChainBridgeImage from "./assets/cross-chain-bridge.svg";
-import yieldFarmingAggregatorImage from "./assets/yield-farming-aggregator.svg";
-// import identityOracleImage from "./assets/identity-oracle.svg";
-// import decentralizedSocialImage from "./assets/decentralized-social.svg";
-import web3CrowdfundingImage from "./assets/web3-crowdfunding.svg";
 import metaverseRealEstateImage from "./assets/metaverse-real-estate.svg";
 import cryptoPortfolioTrackerImage from "./assets/crypto-portfolio-tracker.svg";
 import gasFeeEstimatorImage from "./assets/gas-fee-estimator.svg";
+// import yieldFarmingAggregatorImage from "./assets/yield-farming-aggregator.svg";
+// import identityOracleImage from "./assets/identity-oracle.svg";
+// import decentralizedSocialImage from "./assets/decentralized-social.svg";
+// import web3CrowdfundingImage from "./assets/web3-crowdfunding.svg";
 
 export const projects: Project[] = [
   // Original Projects
@@ -216,17 +216,17 @@ export const projects: Project[] = [
       "Handled edge cases for chain reorgs and dropped transactions elegantly",
     ],
   },
-  {
-    id: 7,
-    title: "Yield Farming Aggregator",
-    description:
-      "Dashboard tracking highest APY farms across multiple protocols with one-click staking capabilities.",
-    tags: ["Next.js", "Redux", "The Graph"],
-    repoUrl: "https://github.com/benjamin-olufemi",
-    image: yieldFarmingAggregatorImage,
-    category: "web3",
-    highlights: ["Detailed APY analytics"],
-  },
+  // {
+  //   id: 7,
+  //   title: "Yield Farming Aggregator",
+  //   description:
+  //     "Dashboard tracking highest APY farms across multiple protocols with one-click staking capabilities.",
+  //   tags: ["Next.js", "Redux", "The Graph"],
+  //   repoUrl: "https://github.com/benjamin-olufemi",
+  //   image: yieldFarmingAggregatorImage,
+  //   category: "web3",
+  //   highlights: ["Detailed APY analytics"],
+  // },
   // {
   //   id: 8,
   //   title: "Identity Oracle",
@@ -259,17 +259,17 @@ export const projects: Project[] = [
     category: "frontend",
     highlights: ["Multi-chain data aggregation"],
   },
-  {
-    id: 11,
-    title: "Web3 Crowdfunding",
-    description:
-      "Kickstarter alternative running on smart contracts with milestone-based fund releasing.",
-    tags: ["Solidity", "Hardhat", "React"],
-    repoUrl: "https://github.com/benjamin-olufemi",
-    image: web3CrowdfundingImage,
-    category: "web3",
-    highlights: ["Smart contract escrow"],
-  },
+  // {
+  //   id: 11,
+  //   title: "Web3 Crowdfunding",
+  //   description:
+  //     "Kickstarter alternative running on smart contracts with milestone-based fund releasing.",
+  //   tags: ["Solidity", "Hardhat", "React"],
+  //   repoUrl: "https://github.com/benjamin-olufemi",
+  //   image: web3CrowdfundingImage,
+  //   category: "web3",
+  //   highlights: ["Smart contract escrow"],
+  // },
   {
     id: 12,
     title: "Gas Fee Estimator",
